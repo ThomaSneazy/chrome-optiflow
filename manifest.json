@@ -1,0 +1,25 @@
+{
+  "name": "Optiflow",
+  "version": "1.0",
+  "description": "Extension Chrome pour améliorer l'expérience sur Webflow",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://webflow.com/design/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources":[
+    "optiflow.html",
+    "optiflow.css"
+  ]
+}
