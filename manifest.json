@@ -7,6 +7,10 @@
   "icons": {
     "128": "optiflow.png"
   },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
   "host_permissions": [
     "http://*/*",
     "https://*/*"
