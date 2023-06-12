@@ -1,25 +1,23 @@
 {
+  "manifest_version": 3,
   "name": "Optiflow",
   "version": "1.0",
-  "description": "Extension Chrome pour améliorer l'expérience sur Webflow",
-  "permissions": [
-    "tabs",
+  "description": "Maximize your Webflow workflow and optimize your UX with our comprehensive extension organizer",
+  "author": "Thomas Carré",
+  "icons": {
+    "128": "optiflow.png"
+  },
+  "host_permissions": [
     "http://*/*",
     "https://*/*"
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
-  "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["https://webflow.com/design/*"],
       "js": ["content.js"]
     }
-  ],
-  "web_accessible_resources":[
-    "optiflow.html",
-    "optiflow.css"
   ]
 }

@@ -1,14 +1,14 @@
-// import './optiflow.css';
-
-console.log('Optiflow est activé sur Webflow !');
-
-// Fonction d'ajout de la div à la classe ".left-sidebar-links"
 function addOptiflowDiv() {
   const leftSidebarLinks = document.querySelector('.left-sidebar-links');
 
   if (leftSidebarLinks) {
     const div = document.createElement('div');
     div.classList.add('button', 'top', 'optiflow');
+    div.setAttribute("id", "optiflow");
+    div.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"  zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="18px" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="31b0b1f54e"><path d="M 25.019531 66 L 349.734375 66 L 349.734375 188 L 25.019531 188 Z M 25.019531 66 " clip-rule="nonzero"/></clipPath><clipPath id="07939112ee"><path d="M 25.019531 0 L 349.734375 0 L 349.734375 120.878906 L 25.019531 120.878906 Z M 25.019531 0 " clip-rule="nonzero"/></clipPath><clipPath id="ea057c28cd"><path d="M 302 93 L 349.734375 93 L 349.734375 282 L 302 282 Z M 302 93 " clip-rule="nonzero"/></clipPath><clipPath id="7749edb3d1"><path d="M 302 93 L 349.734375 93 L 349.734375 134 L 302 134 Z M 302 93 " clip-rule="nonzero"/></clipPath><clipPath id="c5fd1dfe82"><path d="M 25.019531 254 L 349.734375 254 L 349.734375 375 L 25.019531 375 Z M 25.019531 254 " clip-rule="nonzero"/></clipPath><clipPath id="826a252018"><path d="M 302 188.34375 L 349.734375 188.34375 L 349.734375 229 L 302 229 Z M 302 188.34375 " clip-rule="nonzero"/></clipPath><clipPath id="943a75a528"><path d="M 25.019531 162 L 349.734375 162 L 349.734375 283 L 25.019531 283 Z M 25.019531 162 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#31b0b1f54e)"><path fill="#cfcfcf" d="M 25.039062 93.722656 L 71.957031 66.621094 L 118.839844 93.675781 L 187.386719 133.328125 L 302.398438 66.894531 L 349.6875 93.722656 L 187.363281 187.488281 L 71.921875 120.777344 L 25.039062 93.722656 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#07939112ee)"><path fill="#cfcfcf" d="M 255.945312 93.753906 L 302.839844 120.8125 L 349.667969 93.753906 L 349.238281 93.566406 L 302.378906 66.390625 L 187.34375 -0.0117188 L 25.019531 93.765625 L 71.902344 120.8125 L 187.320312 54.148438 L 255.945312 93.753906 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#ea057c28cd)"><path fill="#cfcfcf" d="M 349.742188 280.789062 L 349.6875 93.722656 L 302.859375 120.765625 L 302.804688 253.65625 L 302.792969 254.207031 L 349.6875 281.253906 L 349.742188 280.789062 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#7749edb3d1)"><path fill="#000000" d="M 302.851562 133.417969 L 302.859375 121.0625 L 302.859375 120.765625 L 349.6875 93.722656 L 302.851562 133.417969 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#c5fd1dfe82)"><path fill="#cfcfcf" d="M 118.75 281.261719 L 71.867188 254.207031 L 25.039062 281.261719 L 25.46875 281.4375 L 72.320312 308.628906 L 187.363281 375.027344 L 349.6875 281.253906 L 302.792969 254.207031 L 187.386719 320.871094 L 118.75 281.261719 " fill-opacity="1" fill-rule="nonzero"/></g><path fill="#cfcfcf" d="M 25.039062 93.722656 L 25.445312 93.492188 L 72.328125 120.535156 L 71.921875 120.777344 L 71.867188 254.207031 L 25.039062 281.261719 L 25.039062 93.722656 " fill-opacity="1" fill-rule="nonzero"/><path fill="#000000" d="M 71.859375 133.253906 L 25.039062 93.722656 L 71.921875 120.777344 L 71.859375 133.253906 " fill-opacity="1" fill-rule="nonzero"/><g clip-path="url(#826a252018)"><path fill="#000000" d="M 302.851562 228.257812 L 302.859375 215.90625 L 302.859375 215.609375 L 349.6875 188.550781 L 302.851562 228.257812 " fill-opacity="1" fill-rule="nonzero"/></g><path fill="#393536" d="M 71.878906 224.0625 L 71.890625 215.585938 L 71.921875 215.621094 L 71.878906 224.0625 " fill-opacity="1" fill-rule="nonzero"/><path fill="#000000" d="M 71.859375 228.09375 L 25.039062 188.5625 L 71.890625 215.585938 L 71.878906 224.0625 L 71.859375 228.09375 " fill-opacity="1" fill-rule="nonzero"/><g clip-path="url(#943a75a528)"><path fill="#cfcfcf" d="M 25.039062 189.199219 L 71.957031 162.097656 L 118.839844 189.15625 L 187.386719 228.808594 L 302.398438 162.375 L 349.6875 189.1875 L 187.363281 282.964844 L 71.921875 216.257812 L 25.039062 189.199219 " fill-opacity="1" fill-rule="nonzero"/></g></svg>'
+    div.style.display = 'flex';
+    div.style.justifyContent = 'center';
+    div.style.alignItems = 'center';
 
     const optiflowComponent = document.querySelector('.optiflow-component');
     if (optiflowComponent && optiflowComponent.style.display !== 'none') {
@@ -32,30 +32,15 @@ function addOptiflowDiv() {
       }
     });
 
-    // Création de l'élément image
-    const img = document.createElement('img');
-    img.src = 'img';
-    img.classList.add('bem-Svg');
-    img.style.display = 'block';
-    img.style.position = 'relative';
-    img.style.left = '1px';
-
-    // Ajout de l'élément image à la div
-    div.appendChild(img);
-
     leftSidebarLinks.appendChild(div);
-
-    // Rendre l'élément draggable
-    makeElementDraggable(div);
   }
 }
-
 // Fonction de création du composant Optiflow
 function createOptiflowComponent() {
   const optiflowComponent = document.createElement('div');
   optiflowComponent.classList.add('optiflow-component');
   optiflowComponent.style.position = 'absolute';
-  optiflowComponent.style.zIndex = '9999';
+  optiflowComponent.style.zIndex = '15';
   optiflowComponent.style.width = '20rem';
   optiflowComponent.style.display = 'none';
   optiflowComponent.style.backgroundColor = 'rgb(64, 64, 64)';
@@ -66,6 +51,8 @@ function createOptiflowComponent() {
   optiflowComponent.style.borderTop = '0.0625rem solid rgb(26, 26, 26)';
   optiflowComponent.style.borderRight = '0.0625rem solid rgb(26, 26, 26)';
   optiflowComponent.style.borderBottom = '0.0625rem solid rgb(26, 26, 26)';
+  optiflowComponent.style.opacity = '1';
+
 
   const optiflowTrim = document.createElement('div');
   optiflowTrim.classList.add('optiflow-trim');
@@ -87,6 +74,10 @@ function createOptiflowComponent() {
   optiflowSidebar.style.flexDirection = 'column';
   optiflowSidebar.style.borderLeft = '0.0625rem solid rgb(26, 26, 26)';
 
+  const optiflowHeaderContainer = document.createElement('div'); // Nouvelle div pour contenir le header
+  optiflowHeaderContainer.style.position = 'sticky'; // Fixe la position du header
+  optiflowHeaderContainer.style.top = '0'; // Définit le haut de la div à 0 pour qu'elle reste en haut
+
   const optiflowHeader = document.createElement('div');
   optiflowHeader.classList.add('optiflow-header');
   optiflowHeader.style.display = 'flex';
@@ -100,20 +91,20 @@ function createOptiflowComponent() {
 
   const h2 = document.createElement('h2');
   h2.classList.add('optiflow-h2');
-  h2.textContent = 'OptiFlow';
+  h2.textContent = 'Optiflow';
   h2.style.marginTop = '0px';
   h2.style.marginBottom = '0px';
-  h2.style.fontSize = '1.25rem';
+  h2.style.fontSize = '1rem';
   h2.style.lineHeight = '1.2';
-  h2.style.fontWeight = '400';
+  h2.style.fontWeight = '300';
 
   const optiflowButton = document.createElement('p');
   optiflowButton.classList.add('optiflow-close');
   optiflowButton.textContent = 'Close';
   optiflowButton.style.fontSize = '0.8rem';
   optiflowButton.style.cursor = 'pointer';
-  // Ajout de l'événement au clic sur le bouton
-  optiflowButton.addEventListener('click', function() {
+
+  optiflowButton.addEventListener('click', function () {
     optiflowComponent.style.display = 'none';
     const optiflowDiv = document.querySelector('.optiflow');
     if (optiflowDiv) {
@@ -121,78 +112,127 @@ function createOptiflowComponent() {
     }
   });
 
+  const optiflowDropZone = document.createElement('div');
+  optiflowDropZone.classList.add('optiflow-drop');
+  optiflowDropZone.style.backgroundColor = 'rgb(64, 64, 64)';
+  optiflowDropZone.style.width = '100%';
+  optiflowDropZone.style.display = 'flex';
+  optiflowDropZone.style.flexDirection = 'column';
+  optiflowDropZone.style.gap = '2rem';
+  optiflowDropZone.style.height = '100%';
+  optiflowDropZone.style.padding = '1.5rem';
+
+  const extensions = [
+    { id: "finsweet", class: "fs" },
+    { id: "flowcheck", class: "button.top" },
+    { id: "potato_wrapper" },
+    { id: "sneaps" },
+    { id: "relume-sidebar-button" },
+    { id: "vds" },
+    { id: "flowbase" },
+    { id: "GridUpBtn" },
+    { id: "seoIcon" }
+  ];
+
+
+  const section1 = createSection('Library', 'rgb(77, 77, 77)');
+  const section2 = createSection('Utils', 'rgb(77, 77, 77)');
+  const section3 = createSection('SEO', 'rgb(77, 77, 77)');
+
+  optiflowDropZone.appendChild(section1);
+  optiflowDropZone.appendChild(section2);
+  optiflowDropZone.appendChild(section3);
+
   optiflowHeader.appendChild(h2);
   optiflowHeader.appendChild(optiflowButton);
-  optiflowSidebar.appendChild(optiflowHeader);
-  optiflowComponent.appendChild(optiflowTrim);
-  optiflowComponent.appendChild(optiflowSidebar);
+  optiflowHeaderContainer.appendChild(optiflowHeader); // Ajoute le header à la nouvelle div
 
+  optiflowSidebar.appendChild(optiflowHeaderContainer); // Ajoute la nouvelle div (contenant le header) au sidebar
+  optiflowSidebar.appendChild(optiflowDropZone);
+  optiflowComponent.append(optiflowTrim, optiflowSidebar);
   document.body.appendChild(optiflowComponent);
-}
 
-// Fonction pour rendre un élément draggable
-function makeElementDraggable(element) {
-  element.draggable = true;
+  // Création des sections supplémentaires
+  function createSection(headerText, backgroundColor) {
+    const section = document.createElement('div');
+    section.style.textAlign = 'center';
+    section.style.width = '100%';
+    section.style.minHeight = '10rem';
+    section.style.border = '0.5px solid rgb(217, 217, 217)';
+    section.style.maxHeight = '15rem';
+    section.style.display = 'flex';
+    section.style.alignItems = 'center';
+    section.style.justifyContent = 'space-around';
+    section.style.position = 'relative';
+    section.style.flexWrap = 'wrap';
 
-  element.addEventListener('dragstart', function (event) {
-    event.dataTransfer.setData('text/plain', ''); // Vous pouvez ajouter des données personnalisées ici
-    event.dataTransfer.effectAllowed = 'move';
-    event.dataTransfer.setDragImage(this, 0, 0);
-  });
-}
+    const header = document.createElement('div');
+    header.style.border = '0.8px solid black';
+    header.style.backgroundColor = backgroundColor;
+    header.style.position = 'absolute';
+    header.style.top = '0';
+    header.style.width = '100%';
 
-// Fonction pour autoriser le drop uniquement dans l'optiflowComponent
-function allowDrop(event) {
-  const optiflowComponent = document.querySelector('.optiflow-component');
-  if (optiflowComponent && event.target === optiflowComponent) {
-    event.preventDefault();
+    const h3 = document.createElement('h3');
+    h3.textContent = headerText;
+    h3.style.color = 'white';
+
+    header.appendChild(h3);
+    section.appendChild(header);
+
+    return section;
+  }
+
+  function setMinimumSize(div) {
+    div.style.width = '2.5rem';
+    div.style.height = '2.5rem';
+    div.style.display = "flex";
+    div.style.alignItems = "center";
+    div.style.justifyContent = "center";
+  }
+
+  // Déplace les extensions dans les sections appropriées
+  for (const extension of extensions) {
+    const el = document.getElementById(extension.id) || document.getElementsByClassName(extension.class)[0];
+    if (el) {
+      if ( extension.id === 'relume-sidebar-button' || extension.id === 'flowbase') {
+        section1.appendChild(el);
+        setMinimumSize(el); // Applique la taille minimale à la div
+      } else if (extension.id === 'sneaps' || extension.id === 'seoIcon') {
+        section3.appendChild(el);
+        setMinimumSize(el); // Applique la taille minimale à la div
+      } else {
+        section2.appendChild(el);
+        setMinimumSize(el); // Applique la taille minimale à la div
+      }
+    }
   }
 }
 
-function makeElementsDragAndDroppable() {
-  const elements = document.querySelectorAll('.button.top');
-  const leftSidebarLinks = document.querySelector('.left-sidebar-links');
-  const optiflowComponent = document.querySelector('.optiflow-component');
+// createOptiflowComponent();
 
-  if (elements && leftSidebarLinks && optiflowComponent) {
-    elements.forEach(function (element) {
-      element.addEventListener('dragstart', function (event) {
-        event.dataTransfer.setData('text/plain', element.textContent);
-        event.dataTransfer.effectAllowed = 'move';
-        event.dataTransfer.setDragImage(element, 0, 0);
-      });
-    });
 
-    leftSidebarLinks.addEventListener('dragover', function (event) {
-      event.preventDefault();
-      leftSidebarLinks.classList.add('drag-over');
-    });
 
-    leftSidebarLinks.addEventListener('dragleave', function () {
-      leftSidebarLinks.classList.remove('drag-over');
-    });
-
-    leftSidebarLinks.addEventListener('drop', function (event) {
-      event.preventDefault();
-      leftSidebarLinks.classList.remove('drag-over');
-      const data = event.dataTransfer.getData('text/plain');
-      console.log('Élément déposé :', data);
-    });
-  }
-}
 
 
 
 // Fonction pour observer les modifications de la classe ".left-sidebar-links"
 function observeLeftSidebarLinks() {
-  const observer = new MutationObserver(function(mutationsList) {
+  const observer = new MutationObserver(function (mutationsList) {
     for (const mutation of mutationsList) {
       if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
         // Vérifier si la classe ".left-sidebar-links" est ajoutée ou modifiée
         const leftSidebarLinks = document.querySelector('.left-sidebar-links');
         if (leftSidebarLinks) {
           addOptiflowDiv();
-          makeElementsDragAndDroppable(); // Rendre les éléments drag and droppable
+          // Rendre les div draggable
+          // const targetElements = document.querySelectorAll('.button.top');
+          // targetElements.forEach((element) => {
+          //   element.draggable = true;
+          //   element.addEventListener('dragstart', startDrag);
+          //   element.addEventListener('dragover', overDropZone);
+          //   element.addEventListener('drop', dropElement);
+          // });
           // Arrêter l'observation une fois que la div est ajoutée
           observer.disconnect();
           break;
@@ -201,12 +241,45 @@ function observeLeftSidebarLinks() {
     }
   });
 
-  // Observer les modifications dans le corps de la page
   observer.observe(document.body, { childList: true, subtree: true });
-
-  // Vérifier immédiatement si la classe ".left-sidebar-links" est déjà présente
-  addOptiflowDiv();
-  makeElementsDragAndDroppable();
 }
 
+// Fonction pour ajouter l'attribut draggable aux divs avec la classe '.button.top'
+function addDraggableAttribute() {
+  const targetElements = document.querySelectorAll('.button.top');
+  targetElements.forEach((element) => {
+    element.setAttribute('draggable', 'true');
+  });
+}
+
+// Appel de la fonction lors du chargement de la page
+addDraggableAttribute();
+
+// Fonction pour démarrer le drag
+// function startDrag(event) {
+//   event.dataTransfer.setData('text/plain', event.target.id);
+//   event.dataTransfer.effectAllowed = 'move';
+// }
+
+
+
+// Fonction pour gérer le dragover sur la drop zone
+// function overDropZone(event) {
+//   event.preventDefault();
+// }
+
+
+// Fonction pour gérer le drop de l'élément
+// function dropElement(event) {
+//   event.preventDefault();
+//   const data = event.dataTransfer.getData('text/plain');
+//   const element = document.getElementById(data);
+//   event.target.appendChild(element);
+// }
+
+const optiflowDropZone = document.createElement('div');
+optiflowDropZone.classList.add('optiflow-drop');
+// optiflowDropZone.setAttribute('onDrop', 'dropElement(event)');
+
+// Appel de la fonction pour observer les modifications de la classe ".left-sidebar-links"
 observeLeftSidebarLinks();
