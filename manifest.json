@@ -21,7 +21,8 @@
   "content_scripts": [
     {
       "matches": ["https://webflow.com/design/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["styles/optiflow.css"]
     }
   ]
 }

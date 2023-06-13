@@ -1,10 +1,44 @@
-.optiflow{
-  background-color: red;
+#optiflow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.optiflow-drop{
+  background-color: rgb(64, 64, 64);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+/* .section-header {
+  border: 0.8px solid black;
+  background-color: backgroundColor;
+  position: absolute;
+  top: 0;
+  width: 100%;
+} */
+
+.sections {
+  text-align: center;
+  width: 100%;
+  min-height: 10rem;
+  border: 0.5px solid rgb(217, 217, 217);
+  max-height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  flex-wrap: wrap;
+}
+
 
 .optiflow-component {
   position: absolute;
-  z-index: 9999;
+  z-index: 15;
   width: 20rem;
   display: none;
   background-color: rgb(64, 64, 64);
@@ -21,7 +55,7 @@
   background: var(--wf-designer--panelColorLight);
   border-right: 1px solid var(--wf-designer--borderColorDark);
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   left: 0;
   position: absolute;
@@ -59,5 +93,4 @@
 .optiflow-close {
   font-size: 0.8rem;
   cursor: pointer;
-  color: red;
 }
